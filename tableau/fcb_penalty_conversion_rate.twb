@@ -1,0 +1,845 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20252.25.0818.1050                               -->
+<workbook original-version='18.1' source-build='2025.2.2 (20252.25.0818.1050)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+    <color-palette custom='true' name='FC Barcelona' type='regular'>
+      <color>#edbb00</color>
+      <color>#a50044</color>
+      <color>#004d98</color>
+      <color>#ffffff</color>
+      <color>#db0030</color>
+      <color>#ffed02</color>
+      <color>#000000</color>
+    </color-palette>
+  </preferences>
+  <datasources>
+    <datasource caption='fcb_2325_stats_standard extracción' inline='true' name='federated.0j5bdvb1uokxfo15tvojy0rf59tr' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='fcb_2325_stats_standard' name='hyper.0z6aabo0h5tv5c186q3lc01rcb1u'>
+            <connection authentication='auth-none' author-locale='es_ES' class='hyper' dbname='C:/Users/paran/Documents/Mi Repositorio de Tableau Prep/Fuentes de datos/fcb_2325_stats_standard.hyper' default-settings='yes' server='' sslmode='' username='tableau_internal_user' />
+          </named-connection>
+        </named-connections>
+        <relation connection='hyper.0z6aabo0h5tv5c186q3lc01rcb1u' name='Extract' table='[Extract].[Extract]' type='table' />
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Season</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Season]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Season</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>2</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Extract (Extract.Extract)_122B47EF48814F7BA75A6F7FA740F330]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Player</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Player]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Player</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>37</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Extract (Extract.Extract)_122B47EF48814F7BA75A6F7FA740F330]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Nation</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Nation]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Nation</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>10</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Extract (Extract.Extract)_122B47EF48814F7BA75A6F7FA740F330]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pos</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Pos]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Pos</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>4</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Extract (Extract.Extract)_122B47EF48814F7BA75A6F7FA740F330]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Age</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Age]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Age</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>19</approx-count>
+            <contains-null>true</contains-null>
+            <object-id>[Extract (Extract.Extract)_122B47EF48814F7BA75A6F7FA740F330]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MP</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[MP]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>MP</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>31</approx-count>
+            <contains-null>true</contains-null>
+            <object-id>[Extract (Extract.Extract)_122B47EF48814F7BA75A6F7FA740F330]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Starts</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Starts]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Starts</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>28</approx-count>
+            <contains-null>true</contains-null>
+            <object-id>[Extract (Extract.Extract)_122B47EF48814F7BA75A6F7FA740F330]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Min</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Min]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Min</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>57</approx-count>
+            <contains-null>true</contains-null>
+            <object-id>[Extract (Extract.Extract)_122B47EF48814F7BA75A6F7FA740F330]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>90s</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[90s]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>90s</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>52</approx-count>
+            <contains-null>true</contains-null>
+            <object-id>[Extract (Extract.Extract)_122B47EF48814F7BA75A6F7FA740F330]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gls</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Gls]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Gls</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>14</approx-count>
+            <contains-null>true</contains-null>
+            <object-id>[Extract (Extract.Extract)_122B47EF48814F7BA75A6F7FA740F330]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Ast</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Ast]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Ast</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>10</approx-count>
+            <contains-null>true</contains-null>
+            <object-id>[Extract (Extract.Extract)_122B47EF48814F7BA75A6F7FA740F330]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>G+A</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[G+A]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>G+A</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>18</approx-count>
+            <contains-null>true</contains-null>
+            <object-id>[Extract (Extract.Extract)_122B47EF48814F7BA75A6F7FA740F330]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>G-PK</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[G-PK]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>G-PK</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>14</approx-count>
+            <contains-null>true</contains-null>
+            <object-id>[Extract (Extract.Extract)_122B47EF48814F7BA75A6F7FA740F330]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PK</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[PK]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>PK</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>5</approx-count>
+            <contains-null>true</contains-null>
+            <object-id>[Extract (Extract.Extract)_122B47EF48814F7BA75A6F7FA740F330]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PKatt</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[PKatt]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>PKatt</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>4</approx-count>
+            <contains-null>true</contains-null>
+            <object-id>[Extract (Extract.Extract)_122B47EF48814F7BA75A6F7FA740F330]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CrdY</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[CrdY]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>CrdY</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>8</approx-count>
+            <contains-null>true</contains-null>
+            <object-id>[Extract (Extract.Extract)_122B47EF48814F7BA75A6F7FA740F330]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CrdR</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[CrdR]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>CrdR</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>2</approx-count>
+            <contains-null>true</contains-null>
+            <object-id>[Extract (Extract.Extract)_122B47EF48814F7BA75A6F7FA740F330]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>xG</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[xG]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>xG</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>33</approx-count>
+            <contains-null>true</contains-null>
+            <object-id>[Extract (Extract.Extract)_122B47EF48814F7BA75A6F7FA740F330]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>npxG</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[npxG]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>npxG</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>33</approx-count>
+            <contains-null>true</contains-null>
+            <object-id>[Extract (Extract.Extract)_122B47EF48814F7BA75A6F7FA740F330]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>xAG</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[xAG]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>xAG</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>31</approx-count>
+            <contains-null>true</contains-null>
+            <object-id>[Extract (Extract.Extract)_122B47EF48814F7BA75A6F7FA740F330]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>npxG+xAG</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[npxG+xAG]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>npxG+xAG</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>39</approx-count>
+            <contains-null>true</contains-null>
+            <object-id>[Extract (Extract.Extract)_122B47EF48814F7BA75A6F7FA740F330]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PrgC</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[PrgC]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>PrgC</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>38</approx-count>
+            <contains-null>true</contains-null>
+            <object-id>[Extract (Extract.Extract)_122B47EF48814F7BA75A6F7FA740F330]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PrgP</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[PrgP]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>PrgP</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>51</approx-count>
+            <contains-null>true</contains-null>
+            <object-id>[Extract (Extract.Extract)_122B47EF48814F7BA75A6F7FA740F330]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PrgR</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[PrgR]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>PrgR</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>40</approx-count>
+            <contains-null>true</contains-null>
+            <object-id>[Extract (Extract.Extract)_122B47EF48814F7BA75A6F7FA740F330]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gls.1</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Gls.1]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Gls.1</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>31</approx-count>
+            <contains-null>true</contains-null>
+            <object-id>[Extract (Extract.Extract)_122B47EF48814F7BA75A6F7FA740F330]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Ast.1</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Ast.1]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Ast.1</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>24</approx-count>
+            <contains-null>true</contains-null>
+            <object-id>[Extract (Extract.Extract)_122B47EF48814F7BA75A6F7FA740F330]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>G+A.1</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[G+A.1]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>G+A.1</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>36</approx-count>
+            <contains-null>true</contains-null>
+            <object-id>[Extract (Extract.Extract)_122B47EF48814F7BA75A6F7FA740F330]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>G-PK.1</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[G-PK.1]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>G-PK.1</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>29</approx-count>
+            <contains-null>true</contains-null>
+            <object-id>[Extract (Extract.Extract)_122B47EF48814F7BA75A6F7FA740F330]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>G+A-PK</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[G+A-PK]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>G+A-PK</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>35</approx-count>
+            <contains-null>true</contains-null>
+            <object-id>[Extract (Extract.Extract)_122B47EF48814F7BA75A6F7FA740F330]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>xG.1</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[xG.1]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>xG.1</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>29</approx-count>
+            <contains-null>true</contains-null>
+            <object-id>[Extract (Extract.Extract)_122B47EF48814F7BA75A6F7FA740F330]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>xAG.1</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[xAG.1]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>xAG.1</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>24</approx-count>
+            <contains-null>true</contains-null>
+            <object-id>[Extract (Extract.Extract)_122B47EF48814F7BA75A6F7FA740F330]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>xG+xAG</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[xG+xAG]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>xG+xAG</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>40</approx-count>
+            <contains-null>true</contains-null>
+            <object-id>[Extract (Extract.Extract)_122B47EF48814F7BA75A6F7FA740F330]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>npxG.1</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[npxG.1]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>npxG.1</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>31</approx-count>
+            <contains-null>true</contains-null>
+            <object-id>[Extract (Extract.Extract)_122B47EF48814F7BA75A6F7FA740F330]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>npxG+xAG.1</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[npxG+xAG.1]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>npxG+xAG.1</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>41</approx-count>
+            <contains-null>true</contains-null>
+            <object-id>[Extract (Extract.Extract)_122B47EF48814F7BA75A6F7FA740F330]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='90S' datatype='real' name='[90s]' role='measure' type='quantitative' />
+      <column caption='Penalty Conversion Rate' datatype='real' default-format='p0.00%' name='[Calculation_1136314542841274368]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [PKatt] &gt; 0 THEN [PK] / [PKatt] END' />
+      </column>
+      <column caption='Crd R' datatype='real' name='[CrdR]' role='measure' type='quantitative' />
+      <column caption='Crd Y' datatype='real' name='[CrdY]' role='measure' type='quantitative' />
+      <column caption='G+A-Pk' datatype='real' name='[G+A-PK]' role='measure' type='quantitative' />
+      <column caption='G-Pk.1' datatype='real' name='[G-PK.1]' role='measure' type='quantitative' />
+      <column caption='G-Pk' datatype='real' name='[G-PK]' role='measure' type='quantitative' />
+      <column datatype='string' name='[Nation]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='P Katt' datatype='integer' datatype-customized='true' name='[PKatt]' role='measure' type='quantitative' />
+      <column datatype='string' name='[Player]' role='dimension' type='nominal' />
+      <column caption='Prg C' datatype='real' name='[PrgC]' role='measure' type='quantitative' />
+      <column caption='Prg P' datatype='real' name='[PrgP]' role='measure' type='quantitative' />
+      <column caption='Prg R' datatype='real' name='[PrgR]' role='measure' type='quantitative' />
+      <column caption='Extract' datatype='table' name='[__tableau_internal_object_id__].[Extract (Extract.Extract)_122B47EF48814F7BA75A6F7FA740F330]' role='measure' type='quantitative' />
+      <column caption='Npx G' datatype='real' name='[npxG]' role='measure' type='quantitative' />
+      <column caption='X Ag' datatype='real' name='[xAG]' role='measure' type='quantitative' />
+      <column caption='X G' datatype='real' name='[xG]' role='measure' type='quantitative' />
+      <column-instance column='[Player]' derivation='None' name='[none:Player:nk]' pivot='key' type='nominal' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Player:nk]' palette='FC Barcelona' type='palette'>
+            <map to='#004d98'>
+              <bucket>&quot;Dani Olmo&quot;</bucket>
+            </map>
+            <map to='#004d98'>
+              <bucket>&quot;İlkay Gündoğan&quot;</bucket>
+            </map>
+            <map to='#004d98'>
+              <bucket>&quot;Raphinha&quot;</bucket>
+            </map>
+            <map to='#004d98'>
+              <bucket>&quot;Robert Lewandowski&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;España&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <field-sort-info field-sort-order-type='custom-order'>
+        <field-sort-custom-order field='Season' />
+        <field-sort-custom-order field='Player' />
+        <field-sort-custom-order field='Nation' />
+        <field-sort-custom-order field='Pos' />
+        <field-sort-custom-order field='Age' />
+        <field-sort-custom-order field='MP' />
+        <field-sort-custom-order field='Starts' />
+        <field-sort-custom-order field='Min' />
+        <field-sort-custom-order field='90s' />
+        <field-sort-custom-order field='Gls' />
+        <field-sort-custom-order field='Calculation_1136314542841274368' />
+        <field-sort-custom-order field='Ast' />
+        <field-sort-custom-order field='G+A' />
+        <field-sort-custom-order field='G-PK' />
+        <field-sort-custom-order field='PK' />
+        <field-sort-custom-order field='PKatt' />
+        <field-sort-custom-order field='CrdY' />
+        <field-sort-custom-order field='CrdR' />
+        <field-sort-custom-order field='xG' />
+        <field-sort-custom-order field='npxG' />
+        <field-sort-custom-order field='xAG' />
+        <field-sort-custom-order field='npxG+xAG' />
+        <field-sort-custom-order field='PrgC' />
+        <field-sort-custom-order field='PrgP' />
+        <field-sort-custom-order field='PrgR' />
+        <field-sort-custom-order field='Gls.1' />
+        <field-sort-custom-order field='Ast.1' />
+        <field-sort-custom-order field='G+A.1' />
+        <field-sort-custom-order field='G-PK.1' />
+        <field-sort-custom-order field='G+A-PK' />
+        <field-sort-custom-order field='xG.1' />
+        <field-sort-custom-order field='xAG.1' />
+        <field-sort-custom-order field='xG+xAG' />
+        <field-sort-custom-order field='npxG.1' />
+        <field-sort-custom-order field='npxG+xAG.1' />
+        <field-sort-custom-order field='Geometry (generated)' />
+        <field-sort-custom-order field='Latitude (generated)' />
+        <field-sort-custom-order field='Longitude (generated)' />
+        <field-sort-custom-order field=':Measure Names' />
+        <field-sort-custom-order field='Multiple Values' />
+      </field-sort-info>
+      <object-graph>
+        <objects>
+          <object caption='Extract' id='Extract (Extract.Extract)_122B47EF48814F7BA75A6F7FA740F330'>
+            <properties context=''>
+              <relation connection='hyper.0z6aabo0h5tv5c186q3lc01rcb1u' name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Scatter Plot (PK Attempts vs. Conversion Rate)'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='fcb_2325_stats_standard extracción' name='federated.0j5bdvb1uokxfo15tvojy0rf59tr' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0j5bdvb1uokxfo15tvojy0rf59tr'>
+            <column caption='Penalty Conversion Rate' datatype='real' default-format='p0.00%' name='[Calculation_1136314542841274368]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [PKatt] &gt; 0 THEN [PK] / [PKatt] END' />
+            </column>
+            <column datatype='real' name='[PK]' role='measure' type='quantitative' />
+            <column caption='P Katt' datatype='integer' datatype-customized='true' name='[PKatt]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Player]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Season]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_1136314542841274368]' derivation='Avg' name='[avg:Calculation_1136314542841274368:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[PKatt]' derivation='None' name='[none:PKatt:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Player]' derivation='None' name='[none:Player:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Season]' derivation='None' name='[none:Season:nk]' pivot='key' type='nominal' />
+            <column-instance column='[PK]' derivation='Sum' name='[sum:PK:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[PKatt]' derivation='Sum' name='[sum:PKatt:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.0j5bdvb1uokxfo15tvojy0rf59tr].[none:PKatt:qk]' included-values='in-range'>
+            <min>1</min>
+            <max>4</max>
+          </filter>
+          <filter class='categorical' column='[federated.0j5bdvb1uokxfo15tvojy0rf59tr].[none:Season:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Season:nk]' member='&quot;2023-2024&quot;' />
+              <groupfilter function='member' level='[none:Season:nk]' member='&quot;2024-2025&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0j5bdvb1uokxfo15tvojy0rf59tr].[none:Season:nk]</column>
+            <column>[federated.0j5bdvb1uokxfo15tvojy0rf59tr].[none:PKatt:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='refline'>
+            <format attr='fill-above' id='refline0' value='#00000000' />
+            <format attr='fill-below' id='refline0' value='#00000000' />
+            <format attr='fill-above' id='refline1' value='#00000000' />
+            <format attr='fill-below' id='refline1' value='#00000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0j5bdvb1uokxfo15tvojy0rf59tr].[none:Player:nk]' />
+              <size column='[federated.0j5bdvb1uokxfo15tvojy0rf59tr].[sum:PKatt:qk]' />
+              <lod column='[federated.0j5bdvb1uokxfo15tvojy0rf59tr].[none:Player:nk]' />
+              <lod column='[federated.0j5bdvb1uokxfo15tvojy0rf59tr].[sum:PK:ok]' />
+            </encodings>
+            <reference-line axis-column='[federated.0j5bdvb1uokxfo15tvojy0rf59tr].[sum:PKatt:qk]' enable-instant-analytics='true' formula='average' id='refline0' label-type='value' probability='95' scope='per-pane' value-column='[federated.0j5bdvb1uokxfo15tvojy0rf59tr].[sum:PKatt:qk]' z-order='1' />
+            <reference-line axis-column='[federated.0j5bdvb1uokxfo15tvojy0rf59tr].[avg:Calculation_1136314542841274368:qk]' enable-instant-analytics='true' formula='average' id='refline1' label-type='value' probability='95' scope='per-pane' value-column='[federated.0j5bdvb1uokxfo15tvojy0rf59tr].[avg:Calculation_1136314542841274368:qk]' z-order='2' />
+            <customized-tooltip>
+              <formatted-text>
+                <run bold='true'><![CDATA[Player:<[federated.0j5bdvb1uokxfo15tvojy0rf59tr].[none:Player:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true'><![CDATA[Penalties Scored:<[federated.0j5bdvb1uokxfo15tvojy0rf59tr].[sum:PK:ok]>]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true'><![CDATA[Penalties Attempted:<[federated.0j5bdvb1uokxfo15tvojy0rf59tr].[sum:PKatt:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true'><![CDATA[Conversion Rate: <[federated.0j5bdvb1uokxfo15tvojy0rf59tr].[avg:Calculation_1136314542841274368:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+          </pane>
+        </panes>
+        <rows>[federated.0j5bdvb1uokxfo15tvojy0rf59tr].[avg:Calculation_1136314542841274368:qk]</rows>
+        <cols>[federated.0j5bdvb1uokxfo15tvojy0rf59tr].[sum:PKatt:qk]</cols>
+      </table>
+      <simple-id uuid='{C8DE1795-247A-4BD5-B0EB-D3DADB4A097A}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Scatter Plot (PK Attempts vs. Conversion Rate)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='175'>
+            <card pane-specification-id='0' param='[federated.0j5bdvb1uokxfo15tvojy0rf59tr].[sum:PKatt:qk]' type='size' />
+            <card pane-specification-id='0' param='[federated.0j5bdvb1uokxfo15tvojy0rf59tr].[none:Player:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0j5bdvb1uokxfo15tvojy0rf59tr].[none:PKatt:qk]</field>
+            <field>[federated.0j5bdvb1uokxfo15tvojy0rf59tr].[none:Player:nk]</field>
+            <field>[federated.0j5bdvb1uokxfo15tvojy0rf59tr].[none:Season:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{3CDB7CB3-4C23-49AF-B38A-AF4D03BBB8E9}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Scatter Plot (PK Attempts vs. Conversion Rate)' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
