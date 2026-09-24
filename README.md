@@ -24,8 +24,13 @@ The datasets are provided in CSV format and are used as data sources for the Tab
 The Tableau project includes:
 
 -FC Barcelona vs Real Madrid statistical comparisons
+
 -Player performance analysis
+
 -Team-level comparisons
+
 -Penalty conversion analysis
+
 -Interactive Tableau dashboards
+
 -A Tableau Story combining the visualizations into a structured analysis
